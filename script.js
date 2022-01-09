@@ -51,9 +51,9 @@ function input(){
 		document.getElementById('hasil').innerHTML += `
 			<b>Nama Penjual</b> : ${nama}
 			<br> <b>Tanggal Penjualan</b> : ${tanggal}
-			<br> <b>Hasil Penjualan ${jenis}</b> : ${pendapatan}
-			<br> <b>Komisi Pabrik</b> : ${komisi}
-			<br> <b>Total Pendapatan Penjual</b> : (${pendapatan} - ${komisi}) = ${total}<hr>`
+			<br> <b>Hasil Penjualan ${jenis}</b> : Rp. ${pendapatan}
+			<br> <b>Komisi Pabrik</b> : Rp. ${komisi}
+			<br> <b>Total Pendapatan Penjual</b> : (Rp. ${pendapatan} - Rp. ${komisi}) = Rp. ${total}<hr>`
 
 			document.forms[0]["date"].value = ""
 			document.forms[0]["form"].value = ""
