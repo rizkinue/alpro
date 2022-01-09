@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Program Supplier Penjualan Tahu</title>
+
+	<!-- CSS -->
+   	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div>
+		<h1>Program Laporan Supplier Tahu Mentah</h1>
+		<p>Program Studi D3 Manajemen Informatika</p>
+		<hr> <br>
+	</div>
+
+	<div>
+		<form id="form" name="form">
+			<table>
+				<tr>
+					<td><label>Nama Penjual</label></td>
+					<td>:</td>
+					<td><input type="text" id="nm"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><label id="perNama" class="error"></label></td>
+				</tr>
+				<tr>
+					<td>Tanggal</td>
+					<td>:</td>
+					<td><input type="date" name="date"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><label id="perTgl" class="error"></label></td>
+				</tr>				
+				<tr>
+					<td><label>Jenis Tahu</label></td>
+					<td>:</td>
+					<td>
+						<select name="form">
+							<option value="Tahu Sumedang">Tahu Sumedang</option>
+							<option value="Tahu Sutra">Tahu Sutra</option>
+							<option value="Tahu Kuning">Tahu Kuning</option>
+							<option value="Tahu Bandung">Tahu Bandung</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label>Jumlah Tahu</label></td>
+					<td>:</td>
+					<td><input type="text" name="jumlah"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td><label id="perBerat" class="error"></label></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="Proses" onclick="input()"></td>
+					<td></td>
+					<td><input type="reset" value="Reset"></td>					
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div>
+		<hr>
+		<p id="hasil"></p>	
+	</div>
+
+	<div>
+
+   		<!-- Script -->
+   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   		<script src="https://cdn.rawgit.com/igorescobar/jQuery-Mask-Plugin/1ef022ab/dist/jquery.mask.min.js"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</div>
+</body>
+</html>
